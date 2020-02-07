@@ -23,5 +23,10 @@ namespace PassControlBusinesLogicLayer
             return employee.HasRights(gateId);
             
         }
+
+        public void GenerateNewEvent()
+        {
+
+        }
     }
 }
