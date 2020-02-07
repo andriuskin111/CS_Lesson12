@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraejimoKontrole", "PraejimoKontrole\PraejimoKontrole.csproj", "{5BFC040A-3CB6-4E1F-B593-01460C094453}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassControl", "PraejimoKontrole\PassControl.csproj", "{5BFC040A-3CB6-4E1F-B593-01460C094453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassControlBusinesLogicLayer", "PassControlBusinesLogicLayer\PassControlBusinesLogicLayer.csproj", "{A976B36B-72CF-46DE-91AD-E381A2896FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassControl.test", "PassControl.test\PassControl.test.csproj", "{922A3117-FEDE-4DBE-ABCE-2507673CA884}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5BFC040A-3CB6-4E1F-B593-01460C094453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BFC040A-3CB6-4E1F-B593-01460C094453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BFC040A-3CB6-4E1F-B593-01460C094453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A976B36B-72CF-46DE-91AD-E381A2896FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A976B36B-72CF-46DE-91AD-E381A2896FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A976B36B-72CF-46DE-91AD-E381A2896FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A976B36B-72CF-46DE-91AD-E381A2896FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922A3117-FEDE-4DBE-ABCE-2507673CA884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922A3117-FEDE-4DBE-ABCE-2507673CA884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922A3117-FEDE-4DBE-ABCE-2507673CA884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922A3117-FEDE-4DBE-ABCE-2507673CA884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

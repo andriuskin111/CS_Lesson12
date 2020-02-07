@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace PassControlBusinesLogicLayer
 {
-    class Event
+    public class Event
     {
+        public int EventId { get; private set; }
+        public int EmployeeId { get; private set; }
+        public int GateId { get; private set; }
+        public DateTime EventDate { get; private set; }
+        public bool Pass { get; private set; }
+
+        public Event(int eventId, int employeeId, int gateId, DateTime eventDate, bool pass)
+        {
+            EventId = eventId;
+            EmployeeId = employeeId;
+            GateId = gateId;
+            EventDate = eventDate;
+            Pass = pass;
+        }
     }
 }
