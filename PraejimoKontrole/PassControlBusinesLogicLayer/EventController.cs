@@ -14,19 +14,22 @@ namespace PassControlBusinesLogicLayer
         public EventController(EmployeeRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
+            _eventsList = new List<Event>();
         }
 
         public bool TryPass(int employeeId, int gateId)
         {
             Employee employee = _employeeRepository.Retrieve(employeeId);
+            
+            _eventsList.Add(new Event(Guid.NewGuid(), employeeId, gateId, DateTime.Now, employee.HasRights(gateId)));
 
             return employee.HasRights(gateId);
             
         }
 
-        public void GenerateNewEvent()
+        public List<Event> Retrieve()
         {
-
+            return _eventsList;
         }
     }
 }

@@ -13,7 +13,6 @@ namespace PassControl.test
         {
             // Arrange
             EmployeeRepository employeeRepository = new EmployeeRepository();
-            List<Employee> employeesList = new List<Employee>();
             Employee employee = employeeRepository.Retrieve(1);
             EventController eventController = new EventController(employeeRepository);
             GateRepository gateRepository = new GateRepository();

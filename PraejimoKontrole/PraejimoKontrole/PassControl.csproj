@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PassControlBusinesLogicLayer\PassControlBusinesLogicLayer.csproj">
+      <Project>{a976b36b-72cf-46de-91ad-e381a2896fc0}</Project>
+      <Name>PassControlBusinesLogicLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
