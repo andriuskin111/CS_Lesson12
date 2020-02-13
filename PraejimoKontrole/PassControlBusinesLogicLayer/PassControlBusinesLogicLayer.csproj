@@ -52,7 +52,6 @@
     <Compile Include="RaportEvent.cs" />
     <Compile Include="RaportGenerator.cs" />
     <Compile Include="RaportTotalHours.cs" />
-    <Compile Include="RaportTotalHoursRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
