@@ -15,11 +15,11 @@ namespace PassControl
             GateRepository gateRepository = new GateRepository();
             EventController eventController = new EventController(employeeRepository);
             RaportGenerator raportGenerator = new RaportGenerator(employeeRepository, gateRepository, eventController);
+            bool programmRunning = true;
 
-
-            while (true)
+            while (programmRunning)
             {
-                Console.WriteLine("Select operation [1]-Add Event, [2]-Show All Events, [3]-Show total Hours");
+                Console.WriteLine("Select operation [1]-Add Event, [2]-Show All Events, [3]-Show total Hours, [4]-Exit");
 
                 if(!int.TryParse(Console.ReadLine(), out int operation))
                 {
@@ -44,6 +44,10 @@ namespace PassControl
                     else if (operation == 3)
                     {
                         ShowTotalHousr(raportGenerator);
+                    }
+                    else if (operation == 4)
+                    {
+                        Environment.Exit(0);
                     }
                     else
                     {

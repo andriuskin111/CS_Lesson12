@@ -6,35 +6,33 @@ using PassControlBusinesLogicLayer;
 namespace PassControl.test
 {
     [TestClass]
-    public class EmployeeTest
+    public class EmployeeRepositoryTest
     {
         [TestMethod]
-        public void TestHasRights()
+        public void TestRetrieveEmployeeId()
         {
             // Arrange
             EmployeeRepository employeeRepository = new EmployeeRepository();
             Employee employee = employeeRepository.Retrieve(1);
+            string expected = "Tom";
 
             // Act
-            bool expected = employee.HasRights(1);
+            string actual = employee.EmployeeName;
 
             // Assert
-            Assert.IsTrue(expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        public void TestGetTotalHours()
+        public void TestRetrieve()
         {
             // Arrange
             EmployeeRepository employeeRepository = new EmployeeRepository();
-            Employee employee = employeeRepository.Retrieve(1);
-            employee.PassTrueEvents.Add(new PassTrueEvent(new DateTime(2020 - 01 - 01)));
-            employee.PassTrueEvents.Add(new PassTrueEvent(new DateTime(2020 - 01 - 01)));
-
-            double expected = 0;
+            List<Employee> employeeList = employeeRepository.Retrieve();
+            int expected = 10;
 
             // Act
-            double actual = employee.GetTotalHours();
+            int actual = employeeList.Count;
 
             // Assert
             Assert.AreEqual(expected, actual);

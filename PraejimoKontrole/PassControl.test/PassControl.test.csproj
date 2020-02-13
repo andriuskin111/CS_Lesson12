@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="EventControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmployeeRepositoryTest.cs" />
     <Compile Include="EmployeeTest.cs" />
   </ItemGroup>
   <ItemGroup>
