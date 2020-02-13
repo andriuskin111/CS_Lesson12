@@ -13,16 +13,16 @@ namespace PassControlBusinesLogicLayer
         public EmployeeRepository()
         {
             _employeesList = new List<Employee>();
-            _employeesList.Add(new Employee(1, "Tom", "Cruise", new List<int> { 1, 2, 3 }));
-            _employeesList.Add(new Employee(2, "Vasia", "Petrov", new List<int> { 4 }));
-            _employeesList.Add(new Employee(3, "Andrius", "Petrauskas", new List<int> { 3 }));
-            _employeesList.Add(new Employee(4, "Vytautas", "Jurkevicius", new List<int> { 2, 3 }));
-            _employeesList.Add(new Employee(5, "Pamela", "Anderson", new List<int> { 3, 4 }));
-            _employeesList.Add(new Employee(6, "Arnold", "Schvarcenegger", new List<int> { 1, 2 }));
-            _employeesList.Add(new Employee(7, "Maryte", "Melnikaite", new List<int> { 1 }));
-            _employeesList.Add(new Employee(8, "Eldar", "Ushadov", new List<int> { 2 }));
-            _employeesList.Add(new Employee(9, "Vasilij", "Ivanovich", new List<int> { 3 }));
-            _employeesList.Add(new Employee(10, "Valdemaras", "Chomicius", new List<int> { 2,4 }));
+            _employeesList.Add(new Employee(1, "Tom", "Cruise", new List<int> { 1, 2, 3 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(2, "Vasia", "Petrov", new List<int> { 4 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(3, "Andrius", "Petrauskas", new List<int> { 3 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(4, "Vytautas", "Jurkevicius", new List<int> { 2, 3 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(5, "Pamela", "Anderson", new List<int> { 3, 4 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(6, "Arnold", "Schvarcenegger", new List<int> { 1, 2 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(7, "Maryte", "Melnikaite", new List<int> { 1 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(8, "Eldar", "Ushadov", new List<int> { 2 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(9, "Vasilij", "Ivanovich", new List<int> { 3 }, new List<PassTrueEvent>()));
+            _employeesList.Add(new Employee(10, "Valdemaras", "Chomicius", new List<int> { 2,4 }, new List<PassTrueEvent>()));
         }
 
         public Employee Retrieve(int employeeId)

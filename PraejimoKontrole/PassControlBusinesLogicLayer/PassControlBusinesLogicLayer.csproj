@@ -47,10 +47,12 @@
     <Compile Include="EventController.cs" />
     <Compile Include="Gate.cs" />
     <Compile Include="GateRepository.cs" />
+    <Compile Include="PassTrueEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaportEvent.cs" />
     <Compile Include="RaportGenerator.cs" />
     <Compile Include="RaportTotalHours.cs" />
+    <Compile Include="RaportTotalHoursRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

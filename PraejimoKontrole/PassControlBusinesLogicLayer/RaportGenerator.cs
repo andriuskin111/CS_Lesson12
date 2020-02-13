@@ -44,5 +44,17 @@ namespace PassControlBusinesLogicLayer
 
             return result;
         }
+
+        public List<RaportTotalHours> GenerateTotalHours()
+        {
+            List<RaportTotalHours> result = new List<RaportTotalHours>();
+
+            foreach (var employee in _employeeRepository.Retrieve())
+            {
+                result.Add(new RaportTotalHours(employee.EmployeeName, employee.GetTotalHours()));
+            }
+
+            return result;
+        }
     }
 }

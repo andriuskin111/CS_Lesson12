@@ -9,6 +9,7 @@ namespace PassControlBusinesLogicLayer
     public class EventController
     {
         private List<Event> _eventsList;
+
         private EmployeeRepository _employeeRepository;
 
         public EventController(EmployeeRepository employeeRepository)
@@ -23,6 +24,11 @@ namespace PassControlBusinesLogicLayer
             
             _eventsList.Add(new Event(Guid.NewGuid(), employeeId, gateId, DateTime.Now, employee.HasRights(gateId)));
 
+            if (employee.HasRights(gateId) == true)
+            {
+                employee.PassTrueEvents.Add(new PassTrueEvent(DateTime.Now));
+            }
+            
             return employee.HasRights(gateId);
             
         }
